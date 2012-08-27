@@ -1,0 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+html { 
+	/*background-color:#000;*/
+	/*background: url(tv_trans.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;*/
+}
+
+img
+{
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index: 2;
+}
+
+.videocontainer {
+	margin-left: 22%;
+	margin-top: 50px;
+	position:absolute;
+	z-index: 1;
+	
+}
+
+.buttons {
+	position:absolute;
+	z-index: 3;
+}
+
+#hede {
+  /*height:100%;*/
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+}
