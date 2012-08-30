@@ -42,11 +42,11 @@ img
 	z-index: 3;
 }
 
-#hede {
+.hedeClass {
   /*height:100%;*/
   width:100%;
   position:absolute;
   top:0;
   left:0;
-  display:none;
+  /*display:none;*/
 }

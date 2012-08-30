@@ -1,14 +1,30 @@
 <script type="text/javascript" src="jquery-1.3.2.min.js"></script>
 
-<img src="assets/phil2_black.png"  width="100%" />
-<img id="hede" src="assets/phil3.png" />
+<script>
+$(document).ready(function(e) {
+	$('img[usemap]').rwdImageMaps();
+	
+	// $('area').on('click', function() {
+	// 	alert($(this).attr('alt') + ' clicked');
+	// });
+});
+</script>
+
+<img src="assets/phil3_black.png"  width="100%" />
+<img class ="hedeClass" id="hede" src="assets/phil3.png" usemap="#planetmap"/>
+
+<map name="planetmap">
+  <area shape="rect" coords="0,0,82,126" href="javascript:void(0);" alt="Sun" onclick="basla();" />
+  <!-- <area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury" /> -->
+  <!-- <area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus" /> -->
+</map>
 
 <div class="videocontainer">
 	<div class ="ytvideo" id="ytapiplayer" >
 	</div>
 </div>
 
-<div class="buttons" >
+<!-- <div class="buttons">
 	<a href="javascript:void(0);" onclick="basla();">BASLA!</a>
 	<a href="javascript:void(0);" onclick="play();">Play</a>
 	<a href="javascript:void(0);" onclick="pause();">Pause</a>
@@ -17,4 +33,4 @@
 	<a href="javascript:void(0);" onclick="prev();">Prev</a>
 	<a href="javascript:void(0);" onclick="mute();">Mute</a>
 	<a href="javascript:void(0);" onclick="unmute();">Unmute</a>
-<div id = "turnoff">Lights off</div><div id = "soft">Soft lights</div><div id = "turnon">Lights on</div></div>
+<div id = "turnoff">Lights off</div><div id = "soft">Soft lights</div><div id = "turnon">Lights on</div></div> -->
